@@ -1,0 +1,24 @@
+spring:
+  jpa:
+    generate-ddl: true
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/movies?useSSL=false
+    username: root
+    password: mysql
+
+  mvc.view:
+    prefix: /WEB-INF/
+    suffix: .jsp
+
+s3:
+  accessKey: <access key id>
+  secretKey: <secret access key>
+  bucketName: <name of the bucket>
+
+logging.level:
+  root: INFO
+  org.superbiz.moviefun.albums: ERROR
+  org.superbiz.moviefun.movies: DEBUG
+
